@@ -14,8 +14,7 @@ const Container = styled.div`
 const Announcement = () => {
   return (
     <Container>
-      Member Prices: up to 25% off select Kids & Baby tees + free shipping over
-      $25
+      Member Prices: up to 25% off select + free shipping over $25
     </Container>
   );
 };
