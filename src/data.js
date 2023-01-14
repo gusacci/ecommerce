@@ -27,16 +27,19 @@ export const categories = [
     id: 1,
     img: "https://images.pexels.com/photos/4887153/pexels-photo-4887153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "DRESSES",
+    cat: "dresses",
   },
   {
     id: 2,
     img: "https://images.pexels.com/photos/7691223/pexels-photo-7691223.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "BLAZERS",
+    cat: "blazers",
   },
   {
     id: 3,
     img: "https://images.pexels.com/photos/4937211/pexels-photo-4937211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     title: "ACCESSORIES",
+    cat: "accesories",
   },
 ];
 
