@@ -11,7 +11,7 @@ const Container = styled.div``;
 
 const Wrapper = styled.div`
   display: flex;
-  margin: 20px;
+  padding: 50px;
   ${mobile({ flexDirection: "column" })}
 `;
 const ImgContainer = styled.div`
@@ -25,10 +25,12 @@ const Image = styled.img`
 `;
 const InfoContainer = styled.div`
   flex: 1;
-  margin 20px;
+  padding: 0px 50px;
 `;
 
-const Title = styled.h2``;
+const Title = styled.h2`
+  font-weight: 300;
+`;
 
 const Description = styled.p`
   margin: 20px 0;
@@ -52,7 +54,7 @@ const Filter = styled.div`
   ${mobile({ margin: "10px 0px" })}
 `;
 
-const FilterTitle = styled.div``;
+const FilterTitle = styled.span``;
 
 const FilterColor = styled.div`
   height: 20px;
