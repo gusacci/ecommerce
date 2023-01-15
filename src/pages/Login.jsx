@@ -1,10 +1,15 @@
 import styled from "styled-components";
+import Announcement from "../components/Announcement";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Newsletter from "../components/Newsletter";
 
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background: url("https://lp2.hm.com/hmgoepprod?set=width[1440],quality[80],options[limit]&source=url[https://www2.hm.com/content/dam/h-m-magazine-2022/november_2022/capsule-wardrobe/NEW-Magazine-Capsule-1-oxfordshirt-jpg.jpg]&scale=width[global.width],height[15000],options[global.options]&sink=format[jpg],quality[global.quality]")
+  background: url("https://lp2.hm.com/hmgoepprod?source=url[https://www2.hm.com/content/dam/h-m-magazine-2022/september_2022/bags-evergreen/Evergreen-Bags-Handbag-guide-hero.jpg]&scale=size[1200]&sink=format[jpeg],quality[80]")
     center;
+  background-size: cover;
 
   display: flex;
   align-items: center;
@@ -16,12 +21,13 @@ const Wrapper = styled.div`
   background-color: white;
 `;
 const Title = styled.h1`
+  text-align: center;
   font-size: 24px;
   font-weight: 300;
 `;
 const Form = styled.form`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 `;
 const Input = styled.input`
   flex: 1;
@@ -31,6 +37,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
+  margin: 20px 0;
   width: 40%;
   border: none;
   cursor: pointer;
@@ -40,24 +47,33 @@ const Button = styled.button`
 `;
 
 const Link = styled.a`
+  padding-top: 1px;
   cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
 `;
 
 const Login = () => {
   return (
-    <Container>
-      <Wrapper>
-        <Title>SIGN IN</Title>
-        <Form>
-          <Input placeholder="username" />
-          <Input placeholder="password" />
+    <>
+      <Announcement />
+      <Navbar />
+      <Container>
+        <Wrapper>
+          <Title>SIGN IN</Title>
+          <Form>
+            <Input placeholder="username" />
+            <Input placeholder="password" />
 
-          <Button>LOGIN</Button>
-          <Link>FORGOT PASSWORD</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
-        </Form>
-      </Wrapper>
-    </Container>
+            <Button>LOGIN</Button>
+            <Link>FORGOT PASSWORD</Link>
+            <Link>CREATE A NEW ACCOUNT</Link>
+          </Form>
+        </Wrapper>
+      </Container>
+      <Newsletter />
+      <Footer />
+    </>
   );
 };
 
